@@ -1,0 +1,407 @@
+/* ----------------------------------------------------
+   CONCEPT 04: MODERN ARCHITECTURAL STUDIO (Monolith Blueprint)
+   RWEN Interiors - Premium Redesign
+---------------------------------------------------- */
+
+:root {
+    --bg-concrete: #F0ECE9;
+    --bg-travertine: #E4DDD3;
+    --card-bg: #FFFFFF;
+    --text-obsidian: #1C1C1E;
+    --text-muted: #5C5C60;
+    --accent-rust: #B85D19;
+    --border-dark: #1C1C1E;
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-code: 'Fira Code', monospace;
+    --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body.arch-body {
+    background-color: var(--bg-concrete);
+    color: var(--text-obsidian);
+    font-family: var(--font-heading);
+    line-height: 1.6;
+    overflow-x: hidden;
+    display: flex;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.blueprint-grid-overlay {
+    position: fixed;
+    inset: 0;
+    background-image: 
+        linear-gradient(to right, rgba(28, 28, 30, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(28, 28, 30, 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Vertical Side Nav */
+.arch-side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    background: var(--text-obsidian);
+    color: #FFFFFF;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1000;
+    border-right: 2px solid var(--accent-rust);
+}
+
+.arch-brand-vertical {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.cad-prefix {
+    color: var(--accent-rust);
+    font-family: var(--font-code);
+}
+
+.coord-tracker {
+    font-family: var(--font-code);
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-vertical-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.v-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: var(--transition-smooth);
+}
+
+.v-num {
+    font-family: var(--font-code);
+    font-size: 0.75rem;
+    color: var(--accent-rust);
+}
+
+.v-link.active, .v-link:hover {
+    color: #FFFFFF;
+    padding-left: 8px;
+}
+
+/* Main Content Layout Shifted Right */
+.arch-main-wrapper {
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.code-tag {
+    font-family: var(--font-code);
+    font-size: 0.75rem;
+    color: var(--accent-rust);
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Hero Section */
+.blueprint-hero {
+    min-height: 100vh;
+    padding: 60px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    border-bottom: 2px solid var(--border-dark);
+}
+
+.arch-hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.rust-accent {
+    color: var(--accent-rust);
+}
+
+.arch-lead {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.btn-arch-solid {
+    background: var(--text-obsidian);
+    color: #FFFFFF;
+    padding: 16px 28px;
+    border: none;
+    font-family: var(--font-code);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: var(--transition-smooth);
+}
+
+.btn-arch-solid:hover {
+    background: var(--accent-rust);
+}
+
+.w-100 { width: 100%; justify-content: center; }
+
+/* CAD Frame */
+.cad-frame {
+    position: relative;
+    border: 2px solid var(--border-dark);
+    padding: 12px;
+    background: var(--card-bg);
+}
+
+.cad-frame img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.cad-crosshair {
+    position: absolute;
+    font-family: var(--font-code);
+    font-size: 1.2rem;
+    color: var(--accent-rust);
+}
+
+.ch-tl { top: -12px; left: -8px; }
+.ch-tr { top: -12px; right: -8px; }
+.ch-bl { bottom: -12px; left: -8px; }
+.ch-br { bottom: -12px; right: -8px; }
+
+.scale-ruler {
+    font-family: var(--font-code);
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 8px;
+    border-top: 1px dashed var(--border-dark);
+    padding-top: 6px;
+}
+
+/* Hotspot Section */
+.hotspots-section {
+    padding: 100px 0;
+    border-bottom: 2px solid var(--border-dark);
+}
+
+.blueprint-hotspot-canvas {
+    position: relative;
+    border: 2px solid var(--border-dark);
+    height: 480px;
+    margin-top: 40px;
+}
+
+.blueprint-hotspot-canvas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotspot-pin {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: var(--accent-rust);
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.pin-1 { top: 30%; left: 40%; }
+.pin-2 { top: 60%; left: 70%; }
+.pin-3 { top: 75%; left: 25%; }
+
+.hotspot-popover {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(28, 28, 30, 0.95);
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 320px;
+    border-left: 3px solid var(--accent-rust);
+}
+
+.popover-code {
+    font-family: var(--font-code);
+    font-size: 0.7rem;
+    color: var(--accent-rust);
+}
+
+/* Calculator Section */
+.calculator-section {
+    padding: 100px 0;
+    border-bottom: 2px solid var(--border-dark);
+    background: var(--bg-travertine);
+}
+
+.calculator-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+    background: var(--card-bg);
+    padding: 40px;
+    border: 2px solid var(--border-dark);
+}
+
+.calc-group {
+    margin-bottom: 24px;
+}
+
+.calc-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.calc-group select, .calc-group input[type="range"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-dark);
+    font-family: inherit;
+}
+
+.calc-output-card {
+    background: var(--bg-concrete);
+    padding: 30px;
+    border: 1px solid var(--border-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.output-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(28, 28, 30, 0.1);
+}
+
+.calc-disclaimer {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Works Grid */
+.works-section {
+    padding: 100px 0;
+    border-bottom: 2px solid var(--border-dark);
+}
+
+.arch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.arch-item {
+    border: 1px solid var(--border-dark);
+    background: var(--card-bg);
+}
+
+.arch-item img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.arch-item-info {
+    padding: 20px;
+}
+
+.arch-item-info span {
+    font-family: var(--font-code);
+    font-size: 0.75rem;
+    color: var(--accent-rust);
+}
+
+.arch-item-info h3 {
+    font-size: 1.2rem;
+    margin: 6px 0 12px;
+}
+
+/* Contact */
+.arch-contact {
+    padding: 100px 0;
+}
+
+.arch-contact-card {
+    background: var(--card-bg);
+    border: 2px solid var(--border-dark);
+    padding: 50px;
+}
+
+.arch-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.arch-form input, .arch-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--border-dark);
+    font-family: inherit;
+}
+
+@media (max-width: 992px) {
+    .arch-side-nav { display: none; }
+    .arch-main-wrapper { margin-left: 0; width: 100%; }
+    .blueprint-hero, .calculator-box { grid-template-columns: 1fr; }
+    .arch-grid { grid-template-columns: 1fr; }
+}

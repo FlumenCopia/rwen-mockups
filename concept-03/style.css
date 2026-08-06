@@ -1,0 +1,539 @@
+/* ----------------------------------------------------
+   CONCEPT 03: EDITORIAL MAGAZINE (L'Architecture)
+   RWEN Interiors - Premium Redesign
+---------------------------------------------------- */
+
+:root {
+    --bg-ivory: #FAF8F5;
+    --bg-card: #FFFFFF;
+    --text-black: #111111;
+    --text-muted: #555555;
+    --accent-ochre: #D4AF37;
+    --border-dark: #111111;
+    --border-light: #E2DDD5;
+    --font-heading: 'Playfair Display', serif;
+    --font-sub: 'Cormorant Garamond', serif;
+    --font-sans: 'Montserrat', sans-serif;
+    --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body.editorial-body {
+    background-color: var(--bg-ivory);
+    color: var(--text-black);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.container {
+    width: 92%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Utility Bar */
+.editorial-utility-bar {
+    border-bottom: 1px solid var(--border-dark);
+    padding: 8px 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* Masthead */
+.editorial-header {
+    border-bottom: 2px solid var(--border-dark);
+    padding: 30px 0 20px;
+    text-align: center;
+}
+
+.masthead-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.issue-num, .issue-edition {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.masthead-title {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 6px;
+    line-height: 1;
+}
+
+.editorial-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-item {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: var(--transition-smooth);
+}
+
+.nav-item:hover {
+    color: var(--accent-ochre);
+}
+
+/* Marquee Banner */
+.marquee-banner {
+    border-bottom: 1px solid var(--border-dark);
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    background: var(--text-black);
+    color: #FFFFFF;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 25s linear infinite;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Hero Cover Story */
+.editorial-hero {
+    padding: 70px 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.editorial-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cover-tag {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: var(--accent-ochre);
+    display: block;
+    margin-bottom: 15px;
+}
+
+.cover-heading {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.cover-lead {
+    font-family: var(--font-sub);
+    font-size: 1.3rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.editorial-author-block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-light);
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-name {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    display: block;
+}
+
+.author-title {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.btn-read-drawer {
+    background: var(--text-black);
+    color: #FFFFFF;
+    border: none;
+    padding: 16px 32px;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: var(--transition-smooth);
+}
+
+.btn-read-drawer:hover {
+    background: var(--accent-ochre);
+}
+
+.cover-frame {
+    border: 2px solid var(--border-dark);
+    padding: 15px;
+    background: var(--bg-card);
+}
+
+.cover-frame img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+.cover-caption {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 12px;
+}
+
+/* Editorial Section Header */
+.editorial-section-header {
+    border-bottom: 2px solid var(--border-dark);
+    padding-bottom: 12px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.editorial-section-header h2 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+.editorial-section-header span {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+
+/* Case Studies Grid */
+.case-studies-section {
+    padding: 90px 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.case-studies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+}
+
+.case-card {
+    border: 1px solid var(--border-dark);
+    background: var(--bg-card);
+
+}
+
+.case-img {
+    height: 260px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border-dark);
+}
+
+.case-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.case-card:hover .case-img img {
+    transform: scale(1.06);
+}
+
+.case-meta {
+    padding: 24px;
+}
+
+.case-num {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent-ochre);
+}
+
+.case-meta h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    margin: 8px 0;
+}
+
+.case-cat {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.case-excerpt {
+    font-family: var(--font-sub);
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+.link-read {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-black);
+
+}
+
+/* Awards Section */
+.awards-section {
+    padding: 60px 0;
+    border-bottom: 1px solid var(--border-light);
+    background: var(--bg-card);
+}
+
+.awards-flex {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.award-num {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: block;
+
+}
+
+.award-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Articles Section */
+.articles-section {
+    padding: 90px 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.article-item {
+    border-left: 3px solid var(--border-dark);
+    padding-left: 24px;
+}
+
+.article-date {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent-ochre);
+}
+
+.article-item h3 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+.article-item p {
+    font-family: var(--font-sub);
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 90px 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.faq-accordion {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--border-dark);
+
+}
+
+.faq-question {
+    padding: 20px 0;
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq-answer {
+    padding-bottom: 20px;
+    display: none;
+    font-family: var(--font-sub);
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/* Editorial Contact Box */
+.editorial-contact {
+    padding: 90px 0;
+}
+
+.contact-editorial-box {
+    border: 2px solid var(--border-dark);
+    padding: 60px;
+    background: var(--bg-card);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-editorial-box h2 {
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.editorial-form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.editorial-form input, .editorial-form textarea {
+    padding: 16px;
+    border: 1px solid var(--border-dark);
+    font-family: inherit;
+    font-size: 0.85rem;
+    outline: none;
+}
+
+.btn-editorial-submit {
+    background: var(--border-dark);
+    color: #FFFFFF;
+    border: none;
+    padding: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.btn-editorial-submit:hover {
+    background: var(--accent-ochre);
+}
+
+/* Off-Canvas Drawer */
+.case-drawer {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition-smooth);
+}
+
+.case-drawer.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.drawer-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.drawer-panel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    max-width: 600px;
+    background: var(--bg-ivory);
+    padding: 60px 40px;
+    overflow-y: auto;
+}
+
+.drawer-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Footer */
+.editorial-footer {
+    border-top: 2px solid var(--border-dark);
+    padding: 30px 0;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+@media (max-width: 992px) {
+    .editorial-grid, .case-studies-grid, .articles-grid { grid-template-columns: 1fr; }
+    .masthead-title { font-size: 2.5rem; }
+    .editorial-nav { flex-wrap: wrap; gap: 15px; }
+}

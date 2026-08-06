@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWEN Interiors — Light Minimal Luxury | Atelier Silk & Stone</title>
+    <meta name="description" content="RWEN Interiors is a premier interior architecture studio creating bespoke luxury living and commercial spaces.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome & Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-luxury-body">
+
+    <!-- Custom Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <span class="brand-monogram">RWEN</span>
+            <div class="loader-bar"><div class="loader-progress" id="progress-bar"></div></div>
+            <p class="loader-text">Sculpting Spatial Perfection... <span id="progress-num">0</span>%</p>
+        </div>
+    </div>
+
+    <!-- Floating Navbar -->
+    <header class="floating-header" id="navbar">
+        <div class="header-container">
+            <a href="#" class="brand-logo">
+                <span class="logo-title">RWEN</span>
+                <span class="logo-sub">Interiors</span>
+            </a>
+
+            <nav class="nav-links desktop-only">
+                <a href="#about" class="nav-link">Studio</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#materials" class="nav-link">Materials</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contact" class="btn-cta-gold">
+                    <span>Consultation</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+                <button class="burger-btn" id="menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fullscreen Menu Drawer -->
+    <div class="full-menu-drawer" id="menu-drawer">
+        <div class="drawer-background"></div>
+        <div class="drawer-inner">
+            <div class="drawer-left">
+                <div class="drawer-brand">
+                    <h3>RWEN Interiors</h3>
+                    <p>Atelier of Bespoke Architecture & Spatial Design</p>
+                </div>
+                <div class="drawer-contact-info">
+                    <p><i class="fa-solid fa-location-dot"></i> Thiruvananthapuram, Kerala</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9656044222</p>
+                    <p><i class="fa-solid fa-envelope"></i> rweninteriors22@gmail.com</p>
+                </div>
+            </div>
+            <div class="drawer-right">
+                <ul class="drawer-nav">
+                    <li><a href="#hero" class="drawer-link">01. Home</a></li>
+                    <li><a href="#about" class="drawer-link">02. The Studio</a></li>
+                    <li><a href="#services" class="drawer-link">03. Expertise</a></li>
+                    <li><a href="#portfolio" class="drawer-link">04. Selected Works</a></li>
+                    <li><a href="#materials" class="drawer-link">05. Tactile Palette</a></li>
+                    <li><a href="#contact" class="drawer-link">06. Commission Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-tag">
+                    <span class="badge-pill"><i class="fa-solid fa-gem"></i> Award-Winning Interior Architecture</span>
+                </div>
+                
+                <h1 class="hero-title" id="hero-title">
+                    <span class="title-line">Elegance Defined By</span>
+                    <span class="title-line highlight-serif">Pure Architectural Harmony</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Transforming spaces into timeless works of art across Kerala. Combining aesthetic principles with functional perfection for luxury residences & executive spaces.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn-primary-luxury">
+                        <span>Explore Selected Works</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a href="https://rweninteriors.com/wp-content/uploads/2024/07/DSC08945.jpg" class="glightbox btn-secondary-luxury" data-gallery="hero-video">
+                        <i class="fa-solid fa-play"></i>
+                        <span>Showcase Reel</span>
+                    </a>
+                </div>
+
+                <!-- Ticker Stats -->
+                <div class="hero-stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-num" data-target="250">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Bespoke Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Design Accolades</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num" data-target="125">0</span><span class="stat-plus">M+</span>
+                        <span class="stat-label">Project Valuation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-scroll-indicator">
+                <span>Scroll To Discover</span>
+                <div class="mouse-icon"><div class="wheel"></div></div>
+            </div>
+        </section>
+
+        <!-- Studio / About Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="grid-about">
+                    <div class="about-images-col">
+                        <div class="img-wrapper main-img">
+                            <img src="https://rweninteriors.com/wp-content/uploads/2024/07/DSC08945.jpg" alt="RWEN Luxury Living Room Interior" loading="lazy">
+                        </div>
+                        <div class="img-wrapper floating-sub-img">
+                            <img src="https://rweninteriors.com/wp-content/uploads/2024/07/DSC09156.jpg" alt="Chandelier & Interior Details" loading="lazy">
+                            <div class="experience-badge">
+                                <span class="exp-years">12+</span>
+                                <span class="exp-text">Years of Excellence</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-content-col">
+                        <span class="section-subtitle">The Studio Philosophy</span>
+                        <h2 class="section-title">Where Visionary Architecture Meets Refined Living</h2>
+                        <p class="lead-p">
+                            RWEN Interiors is a premier multidisciplinary architecture and interior consulting firm based in Thiruvananthapuram. We craft curated environments that speak to sophistication, functionality, and timeless artistry.
+                        </p>
+                        <p class="body-p">
+                            Our team balances spatial dynamics, natural illumination, and premium material palettes to turn empty spaces into sanctuaries of luxury. From high-end residential villas to corporate office headquarters, every detail is engineered to perfection.
+                        </p>
+
+                        <div class="signature-quote">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p class="quote-text">"Design is not just what it looks like and feels like. Design is how space elevates your everyday life."</p>
+                            <span class="quote-author">— Gowri Krishna, Director</span>
+                        </div>
+
+                        <div class="about-bullets">
+                            <div class="bullet-item">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Complete 3D CAD Modeling & Reality Rendering</span>
+                            </div>
+                            <div class="bullet-item">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Turnkey MEP & Structural Engineering</span>
+                            </div>
+                            <div class="bullet-item">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Bespoke Furniture & Curated Art Directing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section section-padding-bg" id="services">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">What We Do</span>
+                    <h2 class="section-title">Comprehensive Interior & Architectural Solutions</h2>
+                    <p class="section-desc">Delivering full-spectrum design, technical engineering, and luxurious execution under one roof.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                        <span class="service-num">01</span>
+                        <h3 class="service-title">Interior Architectural Design</h3>
+                        <p class="service-desc">Tailored spatial layouts, ceiling detailing, custom cabinetry, and seamless flow for high-end residences and luxury villas.</p>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-minus"></i> Space Optimization</li>
+                            <li><i class="fa-solid fa-minus"></i> Lighting Architecture</li>
+                            <li><i class="fa-solid fa-minus"></i> Custom Millwork</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-building-user"></i></div>
+                        <span class="service-num">02</span>
+                        <h3 class="service-title">Executive Office Design</h3>
+                        <p class="service-desc">Inspiring corporate workplaces that enhance productivity, reflect brand prestige, and incorporate ergonomic luxury.</p>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-minus"></i> Corporate Boardrooms</li>
+                            <li><i class="fa-solid fa-minus"></i> Acoustic Management</li>
+                            <li><i class="fa-solid fa-minus"></i> Biophilic Office Interiors</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-cubes"></i></div>
+                        <span class="service-num">03</span>
+                        <h3 class="service-title">Photorealistic 3D Rendering</h3>
+                        <p class="service-desc">Experience your design before ground breaks. High-definition 3D CAD modeling, walkthroughs, and lighting simulations.</p>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-minus"></i> Virtual Walkthroughs</li>
+                            <li><i class="fa-solid fa-minus"></i> Day/Night Renderings</li>
+                            <li><i class="fa-solid fa-minus"></i> Material Mapping</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+                        <span class="service-num">04</span>
+                        <h3 class="service-title">Engineering & MEP Works</h3>
+                        <p class="service-desc">Integrated mechanical, electrical, and plumbing engineering ensuring structural durability and smart home integration.</p>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-minus"></i> Electrical & Automation</li>
+                            <li><i class="fa-solid fa-minus"></i> HVAC Integration</li>
+                            <li><i class="fa-solid fa-minus"></i> Plumbing & Drainage</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Showcase -->
+        <section class="portfolio-section section-padding" id="portfolio">
+            <div class="container">
+                <div class="portfolio-header">
+                    <div>
+                        <span class="section-subtitle">Selected Portfolio</span>
+                        <h2 class="section-title">Crafted Spaces & Iconic Projects</h2>
+                    </div>
+                    <div class="portfolio-filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="residential">Residential</button>
+                        <button class="filter-btn" data-filter="commercial">Commercial</button>
+                        <button class="filter-btn" data-filter="renders">3D Renders</button>
+                    </div>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item residential" data-category="residential">
+                        <div class="portfolio-card">
+                            <img src="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20230524-WA0036.jpg" alt="Grand Living Residence" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <span class="project-cat">Residential Villa</span>
+                                <h3 class="project-title">Grand Living Residence</h3>
+                                <p class="project-location">Kowdiar, Thiruvananthapuram</p>
+                                <a href="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20230524-WA0036.jpg" class="glightbox view-project-btn" data-gallery="portfolio">
+                                    <i class="fa-solid fa-expand"></i> View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item commercial" data-category="commercial">
+                        <div class="portfolio-card">
+                            <img src="https://rweninteriors.com/wp-content/uploads/2024/07/chairs-2181919_1280.jpg" alt="Executive Corporate HQ" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <span class="project-cat">Commercial Office</span>
+                                <h3 class="project-title">Executive Corporate Suite</h3>
+                                <p class="project-location">Technopark Phase III, TVM</p>
+                                <a href="https://rweninteriors.com/wp-content/uploads/2024/07/chairs-2181919_1280.jpg" class="glightbox view-project-btn" data-gallery="portfolio">
+                                    <i class="fa-solid fa-expand"></i> View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item renders" data-category="renders">
+                        <div class="portfolio-card">
+                            <img src="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240622-WA0039.jpg" alt="3D Architectural Visualization" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <span class="project-cat">3D CAD Model</span>
+                                <h3 class="project-title">Penthouse Lounge Concept</h3>
+                                <p class="project-location">Kochi Marine Drive</p>
+                                <a href="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240622-WA0039.jpg" class="glightbox view-project-btn" data-gallery="portfolio">
+                                    <i class="fa-solid fa-expand"></i> View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item residential" data-category="residential">
+                        <div class="portfolio-card">
+                            <img src="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240305-WA0049-scaled.jpg" alt="Master Suite Sanctuary" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <span class="project-cat">Bedroom Design</span>
+                                <h3 class="project-title">Aesthetic Master Bedroom</h3>
+                                <p class="project-location">Vazhuthacaud, Kerala</p>
+                                <a href="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240305-WA0049-scaled.jpg" class="glightbox view-project-btn" data-gallery="portfolio">
+                                    <i class="fa-solid fa-expand"></i> View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item residential" data-category="residential">
+                        <div class="portfolio-card">
+                            <img src="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240305-WA0047-scaled.jpg" alt="Tint Blue Accent Lounge" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <span class="project-cat">Interior Styling</span>
+                                <h3 class="project-title">Tint Blue Mood Lounge</h3>
+                                <p class="project-location">Kazhakkoottam, TVM</p>
+                                <a href="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240305-WA0047-scaled.jpg" class="glightbox view-project-btn" data-gallery="portfolio">
+                                    <i class="fa-solid fa-expand"></i> View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item commercial" data-category="commercial">
+                        <div class="portfolio-card">
+                            <img src="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240622-WA0040.jpg" alt="Modern Reception Lobby" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <span class="project-cat">Commercial Lobby</span>
+                                <h3 class="project-title">Minimalist Reception Hall</h3>
+                                <p class="project-location">Maruthankuzhi, TVM</p>
+                                <a href="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240622-WA0040.jpg" class="glightbox view-project-btn" data-gallery="portfolio">
+                                    <i class="fa-solid fa-expand"></i> View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Before / After Interactive Section -->
+        <section class="ba-section section-padding-bg">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">Transformation Story</span>
+                    <h2 class="section-title">Raw Site vs Finished Perfection</h2>
+                    <p class="section-desc">Drag the interactive slider to reveal how RWEN transforms bare structures into luxury environments.</p>
+                </div>
+
+                <div class="ba-slider-container" id="ba-slider">
+                    <div class="ba-image img-after">
+                        <img src="https://rweninteriors.com/wp-content/uploads/2024/07/DSC08945.jpg" alt="Finished Luxury Living Room">
+                        <span class="ba-badge after-badge">Finished Perfection</span>
+                    </div>
+                    <div class="ba-image img-before" id="img-before">
+                        <img src="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240622-WA0043.jpg" alt="Raw Site Construction">
+                        <span class="ba-badge before-badge">Raw Architecture</span>
+                    </div>
+                    <div class="ba-handle" id="ba-handle">
+                        <div class="handle-line"></div>
+                        <div class="handle-button">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                        <div class="handle-line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tactile Material Palette -->
+        <section class="materials-section section-padding" id="materials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Tactile Curation</span>
+                    <h2 class="section-title">The Material & Texture Library</h2>
+                    <p class="section-desc">We select only sustainable, long-lasting, luxury finishes sourced globally and crafted locally.</p>
+                </div>
+
+                <div class="materials-grid">
+                    <div class="material-card">
+                        <div class="material-img">
+                            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Calacatta Marble">
+                        </div>
+                        <div class="material-info">
+                            <span class="mat-cat">Stone & Surface</span>
+                            <h3>Italian Calacatta Marble</h3>
+                            <p>Hand-selected veined marble for kitchen islands and accent fireplace walls.</p>
+                        </div>
+                    </div>
+
+                    <div class="material-card">
+                        <div class="material-img">
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Solid Walnut Wood">
+                        </div>
+                        <div class="material-info">
+                            <span class="mat-cat">Wood Millwork</span>
+                            <h3>Smoked European Walnut</h3>
+                            <p>Warm acoustic slat panels and custom wall paneling with satin polyurethane finish.</p>
+                        </div>
+                    </div>
+
+                    <div class="material-card">
+                        <div class="material-img">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Brushed Champagne Brass">
+                        </div>
+                        <div class="material-info">
+                            <span class="mat-cat">Metal Hardware</span>
+                            <h3>Brushed Champagne Brass</h3>
+                            <p>Custom metal trims, lighting fixtures, and concealed door hardware accents.</p>
+                        </div>
+                    </div>
+
+                    <div class="material-card">
+                        <div class="material-img">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" alt="Textured Bouclé Fabric">
+                        </div>
+                        <div class="material-info">
+                            <span class="mat-cat">Upholstery & Textiles</span>
+                            <h3>Neutral Wool Bouclé</h3>
+                            <p>Soft tactile fabrics for bespoke lounge chairs, headboards, and custom sofas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Process Section -->
+        <section class="process-section section-padding-bg" id="process">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">Our Methodology</span>
+                    <h2 class="section-title">The 4-Stage Execution Journey</h2>
+                </div>
+
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-num-box">01</div>
+                        <div class="step-content">
+                            <h3>Conceptual Consultation</h3>
+                            <p>Client briefing, site measurement, lifestyle analysis, and moodboard alignment to set spatial goals.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-num-box">02</div>
+                        <div class="step-content">
+                            <h3>Schematic & Layout</h3>
+                            <p>Drafting 2D floor plans, circulation paths, lighting layouts, and material sample approvals.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-num-box">03</div>
+                        <div class="step-content">
+                            <h3>3D Render & MEP Detailing</h3>
+                            <p>Full CAD modeling, photorealistic rendering, electrical schematics, and accurate cost estimation.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-num-box">04</div>
+                        <div class="step-content">
+                            <h3>Turnkey On-Site Execution</h3>
+                            <p>Site management, carpenter millwork, quality checks, and final styling handover.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section section-padding">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">Leadership & Vision</span>
+                    <h2 class="section-title">Meet The Minds Behind RWEN</h2>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="https://rweninteriors.com/wp-content/uploads/2024/07/gowri-01-01-e1720615192192.jpg" alt="Gowri Krishna">
+                        </div>
+                        <div class="team-info">
+                            <h3>Gowri Krishna</h3>
+                            <p class="team-role">Director & Principal Designer</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="https://rweninteriors.com/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-12-at-1.56.28-PM-e1720847781157.jpeg" alt="Harikrishnan S R">
+                        </div>
+                        <div class="team-info">
+                            <h3>Harikrishnan S R</h3>
+                            <p class="team-role">Business Head & Strategy</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="https://rweninteriors.com/wp-content/uploads/2024/07/1709298658670-scaled-e1720615109949.jpg" alt="Senior Architect">
+                        </div>
+                        <div class="team-info">
+                            <h3>Senior Architectural Team</h3>
+                            <p class="team-role">MEP & Spatial Engineers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Carousel -->
+        <section class="testimonials-section section-padding-bg">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">Client Endorsements</span>
+                    <h2 class="section-title">What Our Homeowners Say</h2>
+                </div>
+
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-box">
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                <p class="testi-text">"RWEN Interiors turned our Kowdiar villa into an absolute masterpiece. Their 3D renders were exact to what was delivered on site. Highly professional team."</p>
+                                <div class="testi-author">
+                                    <span class="name">Dr. Radhakrishnan</span>
+                                    <span class="loc">Villa Owner, Trivandrum</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-box">
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                <p class="testi-text">"Designing our corporate office with RWEN was seamless. Their MEP knowledge and ergonomics elevated our Technopark office space immensely."</p>
+                                <div class="testi-author">
+                                    <span class="name">Anand V. Nair</span>
+                                    <span class="loc">Tech Executive, Kerala</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="grid-contact">
+                    <div class="contact-info-col">
+                        <span class="section-subtitle">Start A Conversation</span>
+                        <h2 class="section-title">Let’s Design Your Dream Space Together</h2>
+                        <p class="body-p">Whether you're building a new luxury residence or renovating an office space, our studio is ready to bring your vision to life.</p>
+
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4>Studio Location</h4>
+                                    <p>TC no 7, 808(3), Forest Road, Maruthankuzhi Bridge, Thiruvananthapuram, Kerala 695038</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h4>Call Us Directly</h4>
+                                    <p>+91 9656044222 / +91 9656844222</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email Inquiries</h4>
+                                    <p>rweninteriors22@gmail.com / gowrivaiga22@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-col">
+                        <form class="luxury-form" id="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your inquiry has been sent to RWEN Interiors.');">
+                            <h3>Commission Form</h3>
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required placeholder="e.g. Alexander Wright">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" required placeholder="name@domain.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Required</label>
+                                <select id="service">
+                                    <option>Residential Interior Architecture</option>
+                                    <option>Commercial / Office Design</option>
+                                    <option>3D CAD Rendering & Walkthrough</option>
+                                    <option>Renovation & Refurbishment</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Project Details & Location</label>
+                                <textarea id="message" rows="4" placeholder="Tell us about your space size, location, and vision..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit-luxury">
+                                <span>Send Inquiries</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="luxury-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>RWEN Interiors</h2>
+                    <p>Bespoke Interior Architecture & Consultation</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/rwenconstructionandinteriors/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/rwenconstructionandinteriors/?hl=en" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/919656044222" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RWEN Interiors. All Rights Reserved. Designed with Light Minimal Luxury.</p>
+                <div class="footer-clock" id="live-clock">Thiruvananthapuram (GMT+5:30) --:--:--</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,576 @@
+/* ----------------------------------------------------
+   CONCEPT 02: WARM SCANDINAVIAN (Nordic Sanctuary)
+   RWEN Interiors - Premium Redesign
+---------------------------------------------------- */
+
+:root {
+    --bg-sand: #F4F0EA;
+    --bg-light-oak: #EFE8DF;
+    --card-bg: #FFFFFF;
+    --text-forest: #2C3531;
+    --text-muted: #5C6762;
+    --accent-oak: #D8C3A5;
+    --accent-sage: #7A8B7B;
+    --accent-terracotta: #C27D66;
+    --border-color: rgba(44, 53, 49, 0.08);
+    --font-heading: 'Syne', sans-serif;
+    --font-body: 'Outfit', sans-serif;
+    --font-serif: 'DM Serif Display', serif;
+    --radius-soft: 16px;
+    --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body.scandi-body {
+    background-color: var(--bg-sand);
+    color: var(--text-forest);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-padding-bg {
+    padding: 100px 0;
+    background-color: var(--bg-light-oak);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Preloader */
+.preloader-scandi {
+    position: fixed;
+    inset: 0;
+    background: var(--bg-sand);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.preloader-inner {
+    text-align: center;
+}
+
+.organic-shape-spin {
+    width: 60px;
+    height: 60px;
+    border: 3px solid var(--accent-oak);
+    border-top-color: var(--accent-sage);
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    animation: spinShape 3s infinite linear;
+    margin: 0 auto 20px;
+}
+
+@keyframes spinShape {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.preloader-title {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    color: var(--text-forest);
+    margin-bottom: 8px;
+}
+
+/* Header */
+.scandi-header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1240px;
+    z-index: 1000;
+    background: rgba(244, 240, 234, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    padding: 12px 24px;
+}
+
+.scandi-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scandi-brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.brand-tag {
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+    color: var(--accent-sage);
+}
+
+.nav-category-pills {
+    display: flex;
+    gap: 8px;
+}
+
+.cat-pill {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.cat-pill.active, .cat-pill:hover {
+    background: var(--card-bg);
+    color: var(--accent-sage);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.btn-scandi-pill {
+    background: var(--accent-sage);
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 24px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition-smooth);
+}
+
+.btn-scandi-pill:hover {
+    background: var(--text-forest);
+}
+
+/* Scandi Hero */
+.scandi-hero {
+    padding-top: 160px;
+    padding-bottom: 80px;
+}
+
+.hero-bento-container {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.scandi-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(122, 139, 123, 0.15);
+    color: var(--accent-sage);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.scandi-hero-title {
+    font-family: var(--font-heading);
+    font-size: 3.2rem;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.serif-sub {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--accent-terracotta);
+}
+
+.scandi-hero-p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.switcher-controls {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: var(--radius-soft);
+    border: 1px solid var(--border-color);
+}
+
+.switcher-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    display: block;
+    margin-bottom: 12px;
+}
+
+.switcher-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.switch-btn {
+    flex: 1;
+    background: var(--bg-sand);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.switch-btn.active, .switch-btn:hover {
+    background: var(--accent-sage);
+    color: #FFFFFF;
+    border-color: var(--accent-sage);
+}
+
+/* Room Preview Card */
+.room-preview-card {
+    position: relative;
+    height: 480px;
+    border-radius: var(--radius-soft);
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.room-preview-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease, transform 0.6s ease;
+}
+
+.room-info-glass {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(16px);
+    padding: 24px;
+    border-radius: var(--radius-soft);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.room-info-glass h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+}
+
+.room-info-glass p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.room-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent-sage);
+}
+
+/* Bento Services Grid */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.bento-card {
+    background: var(--card-bg);
+    padding: 35px;
+    border-radius: var(--radius-soft);
+    border: 1px solid var(--border-color);
+    transition: var(--transition-smooth);
+}
+
+.bento-large {
+    grid-column: span 2;
+}
+
+.bento-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+.bento-icon {
+    font-size: 2rem;
+    color: var(--accent-sage);
+    margin-bottom: 20px;
+}
+
+.bento-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.bento-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.bento-features {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.bento-features span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-sage);
+}
+
+/* Moodboard Section */
+.moodboard-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.materials-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.mat-select-card {
+    background: var(--card-bg);
+    padding: 18px 24px;
+    border-radius: var(--radius-soft);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.mat-select-card.active, .mat-select-card:hover {
+    border-color: var(--accent-sage);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.mat-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.moodboard-preview-box {
+    position: relative;
+    height: 380px;
+    border-radius: var(--radius-soft);
+    overflow: hidden;
+}
+
+.moodboard-preview-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+}
+
+.moodboard-overlay-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Bento Portfolio Grid */
+.bento-portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.bento-port-item {
+    position: relative;
+    border-radius: var(--radius-soft);
+    overflow: hidden;
+    height: 300px;
+}
+
+.bento-port-item.item-1 { grid-column: span 2; height: 380px; }
+.bento-port-item.item-4 { grid-column: span 2; }
+
+.bento-port-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.bento-port-item:hover img {
+    transform: scale(1.06);
+}
+
+.port-content {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(44,53,49,0.85) 100%);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #FFFFFF;
+}
+
+.port-content span {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent-oak);
+}
+
+.port-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+}
+
+.btn-view-bento {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.85);
+    color: var(--text-forest);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Scandi Testimonials */
+.scandi-testi-card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: var(--radius-soft);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.scandi-testi-card .quote-icon {
+    font-size: 2rem;
+    color: var(--accent-sage);
+    margin-bottom: 20px;
+}
+
+.scandi-testi-card p {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Scandi Contact Box */
+.scandi-contact-box {
+    background: var(--card-bg);
+    padding: 60px;
+    border-radius: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.scandi-info-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.scandi-form .input-field {
+    margin-bottom: 16px;
+}
+
+.scandi-form input, .scandi-form select, .scandi-form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--bg-sand);
+    font-family: inherit;
+    outline: none;
+}
+
+.btn-scandi-submit {
+    width: 100%;
+    background: var(--accent-sage);
+    color: #FFFFFF;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.scandi-footer {
+    background: var(--text-forest);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 30px 0;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 992px) {
+    .hero-bento-container, .moodboard-wrapper, .scandi-contact-box { grid-template-columns: 1fr; }
+    .bento-grid, .bento-portfolio-grid { grid-template-columns: 1fr; }
+    .bento-large, .bento-port-item.item-1, .bento-port-item.item-4 { grid-column: span 1; }
+    .nav-category-pills { display: none; }
+}

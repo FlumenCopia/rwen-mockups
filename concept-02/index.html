@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWEN Interiors — Warm Scandinavian | Nordic Sanctuary</title>
+    <meta name="description" content="Warm Scandinavian interior architecture and serene living environments by RWEN Interiors.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@500;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome & Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="scandi-body">
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader-scandi">
+        <div class="preloader-inner">
+            <div class="organic-shape-spin"></div>
+            <h2 class="preloader-title">RWEN NORDIC SANCTUARY</h2>
+            <p>Crafting Earthy Serenity... <span id="progress-val">0%</span></p>
+        </div>
+    </div>
+
+    <!-- Scandi Warm Header -->
+    <header class="scandi-header" id="scandi-nav">
+        <div class="scandi-nav-container">
+            <a href="#" class="scandi-brand">
+                <span class="brand-name">RWEN</span>
+                <span class="brand-tag">SANCTUARY</span>
+            </a>
+
+            <!-- Quick Filter Bar integrated into nav -->
+            <div class="nav-category-pills">
+                <a href="#hero" class="cat-pill active">Overview</a>
+                <a href="#hero-switcher" class="cat-pill">Room Switcher</a>
+                <a href="#bento-services" class="cat-pill">Services</a>
+                <a href="#moodboard" class="cat-pill">Moodboard</a>
+                <a href="#bento-portfolio" class="cat-pill">Portfolio</a>
+                <a href="#contact" class="cat-pill">Book Studio</a>
+            </div>
+
+            <div class="scandi-nav-cta">
+                <a href="#contact" class="btn-scandi-pill">
+                    <i class="fa-solid fa-leaf"></i>
+                    <span>Consult Atelier</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Interactive Room Switcher -->
+        <section class="scandi-hero" id="hero">
+            <div class="hero-bento-container">
+                <div class="hero-text-block">
+                    <span class="scandi-badge"><i class="fa-solid fa-seedling"></i> Organic Luxury Architecture</span>
+                    <h1 class="scandi-hero-title">
+                        Harmonious Spaces <br>
+                        <span class="serif-sub">Rooted In Nature & Simplicity</span>
+                    </h1>
+                    <p class="scandi-hero-p">
+                        RWEN Interiors reimagines Indian living through Warm Scandinavian design. We blend light-filled oak textures, soft linen textiles, and serene spatial proportions.
+                    </p>
+
+                    <div class="switcher-controls" id="hero-switcher">
+                        <span class="switcher-label">Explore Room Sanctuary:</span>
+                        <div class="switcher-btns">
+                            <button class="switch-btn active" data-bg="https://rweninteriors.com/wp-content/uploads/2024/07/DSC08945.jpg" data-title="Nordic Living Sanctuary" data-desc="Natural oak wall slats, sunlit open planning, and custom curved furniture.">Living</button>
+                            <button class="switch-btn" data-bg="https://rweninteriors.com/wp-content/uploads/2024/07/chairs-2181919_1280.jpg" data-title="Biophilic Executive Workplace" data-desc="Acoustic wood paneling, warm lighting, and serene focus zones.">Office</button>
+                            <button class="switch-btn" data-bg="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240305-WA0049-scaled.jpg" data-title="Minimalist Master Suite" data-desc="Earth-tone linens, integrated ambient headboard glow, and organic warmth.">Bedroom</button>
+                            <button class="switch-btn" data-bg="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240305-WA0047-scaled.jpg" data-title="Tactile Tint Lounge" data-desc="Sage green accents, brushed brass hardware, and tactile upholstery.">Lounge</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Interactive Room Canvas -->
+                <div class="hero-image-block">
+                    <div class="room-preview-card" id="room-card">
+                        <img src="https://rweninteriors.com/wp-content/uploads/2024/07/DSC08945.jpg" alt="Nordic Living Space" id="room-img">
+                        <div class="room-info-glass">
+                            <h3 id="room-title">Nordic Living Sanctuary</h3>
+                            <p id="room-desc">Natural oak wall slats, sunlit open planning, and custom curved furniture.</p>
+                            <span class="room-badge"><i class="fa-solid fa-sun"></i> Natural Daylight Optimized</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid Services -->
+        <section class="bento-services-section section-padding" id="bento-services">
+            <div class="container">
+                <div class="section-title-wrap text-center">
+                    <span class="scandi-sub">Bespoke Design Modules</span>
+                    <h2 class="scandi-h2">Architectural Capabilities</h2>
+                </div>
+
+                <div class="bento-grid">
+                    <div class="bento-card bento-large card-tilt">
+                        <div class="bento-icon"><i class="fa-solid fa-couch"></i></div>
+                        <h3>Interior Architectural Design</h3>
+                        <p>Complete spatial planning, custom cabinetry, lighting layouts, and organic flow for luxury homes in Kerala.</p>
+                        <div class="bento-features">
+                            <span><i class="fa-solid fa-check"></i> Spatial Flow</span>
+                            <span><i class="fa-solid fa-check"></i> Custom Millwork</span>
+                            <span><i class="fa-solid fa-check"></i> Daylight Engineering</span>
+                        </div>
+                    </div>
+
+                    <div class="bento-card bento-medium card-tilt">
+                        <div class="bento-icon"><i class="fa-solid fa-cube"></i></div>
+                        <h3>Photorealistic 3D Renders</h3>
+                        <p>High-resolution CAD 3D modeling and lighting walkthroughs for absolute client confidence.</p>
+                    </div>
+
+                    <div class="bento-card bento-medium card-tilt">
+                        <div class="bento-icon"><i class="fa-solid fa-building"></i></div>
+                        <h3>Commercial Workspaces</h3>
+                        <p>High-performance executive office suites that inspire productivity and embody brand prestige.</p>
+                    </div>
+
+                    <div class="bento-card bento-large card-tilt">
+                        <div class="bento-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                        <h3>Turnkey MEP Engineering</h3>
+                        <p>Structural engineering, mechanical, electrical, and plumbing infrastructure executed to perfection.</p>
+                        <div class="bento-features">
+                            <span><i class="fa-solid fa-check"></i> Smart HVAC</span>
+                            <span><i class="fa-solid fa-check"></i> Concealed Wiring</span>
+                            <span><i class="fa-solid fa-check"></i> Quality Audits</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Moodboard Explorer -->
+        <section class="moodboard-section section-padding-bg" id="moodboard">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="scandi-sub">Tactile Selection</span>
+                    <h2 class="scandi-h2">Interactive Scandinavian Moodboard</h2>
+                    <p class="scandi-p">Click materials below to curate your space's signature texture palette.</p>
+                </div>
+
+                <div class="moodboard-wrapper">
+                    <div class="materials-selector">
+                        <div class="mat-select-card active" data-texture="oak" data-img="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80">
+                            <span class="mat-dot" style="background:#D8C3A5;"></span>
+                            <div>
+                                <h4>Nordic White Oak</h4>
+                                <small>Warm Wood Slat Walls</small>
+                            </div>
+                        </div>
+
+                        <div class="mat-select-card" data-texture="stone" data-img="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80">
+                            <span class="mat-dot" style="background:#E2DDD5;"></span>
+                            <div>
+                                <h4>Travertine Limestone</h4>
+                                <small>Matte Countertops & Fireplaces</small>
+                            </div>
+                        </div>
+
+                        <div class="mat-select-card" data-texture="sage" data-img="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=600&q=80">
+                            <span class="mat-dot" style="background:#7A8B7B;"></span>
+                            <div>
+                                <h4>Muted Sage Velvet</h4>
+                                <small>Soft Upholstery Accent</small>
+                            </div>
+                        </div>
+
+                        <div class="mat-select-card" data-texture="brass" data-img="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80">
+                            <span class="mat-dot" style="background:#C27D66;"></span>
+                            <div>
+                                <h4>Warm Terracotta & Brass</h4>
+                                <small>Concealed Architectural Hardware</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Texture Preview Box -->
+                    <div class="moodboard-preview-box">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Material Texture" id="moodboard-img">
+                        <div class="moodboard-overlay-info">
+                            <h3 id="moodboard-title">Nordic White Oak</h3>
+                            <p id="moodboard-desc">Sourced for natural wood grain, warmth, and biophilic serenity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Portfolio Grid -->
+        <section class="bento-portfolio-section section-padding" id="bento-portfolio">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="scandi-sub">Our Works</span>
+                    <h2 class="scandi-h2">Curated Project Portfolio</h2>
+                </div>
+
+                <div class="bento-portfolio-grid">
+                    <div class="bento-port-item item-1">
+                        <img src="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20230524-WA0036.jpg" alt="Living Suite">
+                        <div class="port-content">
+                            <span>Residential Villa</span>
+                            <h3>Kowdiar Sanctuary</h3>
+                            <a href="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20230524-WA0036.jpg" class="glightbox btn-view-bento"><i class="fa-solid fa-expand"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="bento-port-item item-2">
+                        <img src="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240305-WA0049-scaled.jpg" alt="Master Bedroom">
+                        <div class="port-content">
+                            <span>Master Suite</span>
+                            <h3>Aesthetic Rest Suite</h3>
+                            <a href="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240305-WA0049-scaled.jpg" class="glightbox btn-view-bento"><i class="fa-solid fa-expand"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="bento-port-item item-3">
+                        <img src="https://rweninteriors.com/wp-content/uploads/2024/07/chairs-2181919_1280.jpg" alt="Executive Office">
+                        <div class="port-content">
+                            <span>Commercial HQ</span>
+                            <h3>Technopark Suite</h3>
+                            <a href="https://rweninteriors.com/wp-content/uploads/2024/07/chairs-2181919_1280.jpg" class="glightbox btn-view-bento"><i class="fa-solid fa-expand"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="bento-port-item item-4">
+                        <img src="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240622-WA0039.jpg" alt="3D Render">
+                        <div class="port-content">
+                            <span>3D CAD Walkthrough</span>
+                            <h3>Marine Drive Penthouse</h3>
+                            <a href="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240622-WA0039.jpg" class="glightbox btn-view-bento"><i class="fa-solid fa-expand"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Slider -->
+        <section class="scandi-testimonials section-padding-bg">
+            <div class="container">
+                <div class="swiper scandi-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="scandi-testi-card">
+                                <i class="fa-solid fa-quote-left quote-icon"></i>
+                                <p>"RWEN Interiors brought a tranquil Scandinavian elegance to our Trivandrum home. Their attention to natural wood finishes and acoustic comfort is unrivaled."</p>
+                                <h4>Gautam & Priya Nair</h4>
+                                <small>Kowdiar, Kerala</small>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="scandi-testi-card">
+                                <i class="fa-solid fa-quote-left quote-icon"></i>
+                                <p>"Their 3D models were so accurate that the final handover looked 100% identical to the renders. Fantastic execution by Harikrishnan and team!"</p>
+                                <h4>Suresh Menon</h4>
+                                <small>Business Director, Kochi</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="scandi-contact section-padding" id="contact">
+            <div class="container">
+                <div class="scandi-contact-box">
+                    <div class="contact-text">
+                        <span class="scandi-sub">Book Your Studio Session</span>
+                        <h2>Let’s Build Your Natural Sanctuary</h2>
+                        <p>Get in touch with RWEN Interiors for custom residential architecture, office interiors, or 3D rendering consultations.</p>
+                        <div class="scandi-info-list">
+                            <p><i class="fa-solid fa-phone"></i> +91 9656044222 / +91 9656844222</p>
+                            <p><i class="fa-solid fa-envelope"></i> rweninteriors22@gmail.com</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Forest Road, Maruthankuzhi, Thiruvananthapuram</p>
+                        </div>
+                    </div>
+
+                    <form class="scandi-form" onsubmit="event.preventDefault(); alert('Inquiry sent to RWEN Interiors!');">
+                        <div class="input-field">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="input-field">
+                            <select>
+                                <option>Residential Villa</option>
+                                <option>Executive Office</option>
+                                <option>3D CAD Renderings</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <textarea placeholder="Describe your vision or site details..." rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn-scandi-submit">
+                            <span>Request Consultation</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="scandi-footer">
+        <div class="container text-center">
+            <p>&copy; 2026 RWEN Interiors. Warm Scandinavian Redesign. Designed for Pure Serenity.</p>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWEN Interiors — Modern Architectural Studio | Monolith Blueprint</title>
+    <meta name="description" content="Precision architectural studio, structural engineering, and 3D CAD interior design by RWEN Interiors.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome & Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="arch-body">
+
+    <!-- Blueprint Line Grid Overlay -->
+    <div class="blueprint-grid-overlay"></div>
+
+    <!-- Vertical Side Navigation Bar -->
+    <aside class="arch-side-nav">
+        <a href="#" class="arch-brand-vertical">
+            <span class="cad-prefix">CAD.</span>RWEN
+        </a>
+
+        <div class="coord-tracker">
+            <span class="coord-val">LAT 8.5136° N</span>
+            <span class="coord-val">LON 76.9799° E</span>
+        </div>
+
+        <nav class="nav-vertical-links">
+            <a href="#blueprint-hero" class="v-link active"><span class="v-num">01</span><span>HERO</span></a>
+            <a href="#hotspots" class="v-link"><span class="v-num">02</span><span>CAD HOTSPOTS</span></a>
+            <a href="#calculator" class="v-link"><span class="v-num">03</span><span>ESTIMATOR</span></a>
+            <a href="#specs" class="v-link"><span class="v-num">04</span><span>SPECS</span></a>
+            <a href="#works" class="v-link"><span class="v-num">05</span><span>WORKS</span></a>
+            <a href="#contact" class="v-link"><span class="v-num">06</span><span>CONTACT</span></a>
+        </nav>
+    </aside>
+
+    <main class="arch-main-wrapper">
+        <!-- Dual Split Blueprint Hero -->
+        <section class="blueprint-hero" id="blueprint-hero">
+            <div class="split-hero-left">
+                <div class="blueprint-header-tag">
+                    <span class="code-tag">SYSTEM // MODEL_V4.8</span>
+                    <span class="code-status">STATUS: ONLINE</span>
+                </div>
+
+                <h1 class="arch-hero-title">
+                    ARCHITECTURAL <br>
+                    <span class="rust-accent">MONOLITH CAD</span>
+                </h1>
+                
+                <p class="arch-lead">
+                    Precision-engineered interior architecture, turnkey MEP structural drafting, and bespoke luxury spatial design in Thiruvananthapuram.
+                </p>
+
+                <div class="blueprint-actions">
+                    <a href="#calculator" class="btn-arch-solid">
+                        <span>LAUNCH SCOPE ESTIMATOR</span>
+                        <i class="fa-solid fa-calculator"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Photo Reveal -->
+            <div class="split-hero-right">
+                <div class="cad-frame">
+                    <img src="https://rweninteriors.com/wp-content/uploads/2024/07/DSC08945.jpg" alt="Rendered Architecture">
+                    <div class="cad-crosshair ch-tl">+</div>
+                    <div class="cad-crosshair ch-tr">+</div>
+                    <div class="cad-crosshair ch-bl">+</div>
+                    <div class="cad-crosshair ch-br">+</div>
+                    <div class="scale-ruler">SCALE 1:50 | 4500 SQ.FT RESIDENCE</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Spatial Hotspots Section -->
+        <section class="hotspots-section" id="hotspots">
+            <div class="container">
+                <div class="arch-section-header">
+                    <span class="code-tag">MODULE 02 // SPATIAL ANALYSIS</span>
+                    <h2>Interactive CAD Hotspot Viewer</h2>
+                    <p>Click structural pins to inspect MEP and interior specifications.</p>
+                </div>
+
+                <div class="blueprint-hotspot-canvas">
+                    <img src="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20230524-WA0036.jpg" alt="Floorplan View" id="hotspot-bg">
+                    
+                    <!-- Pins -->
+                    <div class="hotspot-pin pin-1" data-title="Acoustic Ceiling Grid" data-spec="Concealed LED strip illumination, 12mm gypsum acoustic drop ceiling with 45dB sound damping.">
+                        <span class="pin-pulse"></span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+
+                    <div class="hotspot-pin pin-2" data-title="Double-Height Glazing" data-spec="Thermally insulated structural glass curtain walls for maximum natural daylight harvest.">
+                        <span class="pin-pulse"></span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+
+                    <div class="hotspot-pin pin-3" data-title="Calacatta Marble Island" data-spec="Custom CNC-milled bookmatched Italian marble island with integrated concealed induction hob.">
+                        <span class="pin-pulse"></span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+
+                    <!-- Detail Popover Card -->
+                    <div class="hotspot-popover" id="hotspot-popover">
+                        <div class="popover-code">NODE_SPEC #402</div>
+                        <h4 id="popover-title">Click a pin on the plan</h4>
+                        <p id="popover-spec">Select any structural target pin to inspect CAD details.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Scope & Cost Estimator -->
+        <section class="calculator-section" id="calculator">
+            <div class="container">
+                <div class="arch-section-header">
+                    <span class="code-tag">MODULE 03 // BUDGET & SCOPE ESTIMATOR</span>
+                    <h2>Interactive Project Calculator</h2>
+                    <p>Select your space parameters to receive an instant estimated timeline & budget tier.</p>
+                </div>
+
+                <div class="calculator-box">
+                    <div class="calc-inputs">
+                        <div class="calc-group">
+                            <label>Project Scope Type</label>
+                            <select id="calc-type">
+                                <option value="residential">Luxury Residential Villa</option>
+                                <option value="commercial">Executive Corporate Office</option>
+                                <option value="render">3D CAD Modeling & Rendering Only</option>
+                            </select>
+                        </div>
+
+                        <div class="calc-group">
+                            <label>Approximate Area: <span id="area-val">2500</span> SQ.FT</label>
+                            <input type="range" id="calc-area" min="500" max="10000" step="250" value="2500">
+                        </div>
+
+                        <div class="calc-group">
+                            <label>Finish Specification Tier</label>
+                            <select id="calc-tier">
+                                <option value="premium">Premium Architectural Grade</option>
+                                <option value="ultra">Ultra-Luxury Custom Monolith</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="calc-output-card">
+                        <span class="code-tag">CALCULATED METRICS</span>
+                        <div class="output-row">
+                            <span>Est. Construction Time:</span>
+                            <strong id="est-time">12 - 16 Weeks</strong>
+                        </div>
+                        <div class="output-row">
+                            <span>Project Valuation Grade:</span>
+                            <strong id="est-grade">Tier I Luxury</strong>
+                        </div>
+                        <p class="calc-disclaimer">*Estimates based on RWEN standard Kerala rates. Contact atelier for full BOQ breakdown.</p>
+                        <a href="#contact" class="btn-arch-solid w-100">BOOK BOQ AUDIT</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Masonry Works Gallery -->
+        <section class="works-section" id="works">
+            <div class="container">
+                <div class="arch-section-header">
+                    <span class="code-tag">MODULE 05 // STRUCTURAL ARCHIVE</span>
+                    <h2>Selected Architectural Executions</h2>
+                </div>
+
+                <div class="arch-grid">
+                    <div class="arch-item">
+                        <img src="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20230524-WA0036.jpg" alt="Villa">
+                        <div class="arch-item-info">
+                            <span>CAD_ID #101</span>
+                            <h3>Kowdiar Villa Sanctuary</h3>
+                            <a href="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20230524-WA0036.jpg" class="glightbox link-arch"><i class="fa-solid fa-expand"></i> Inspect Plate</a>
+                        </div>
+                    </div>
+
+                    <div class="arch-item">
+                        <img src="https://rweninteriors.com/wp-content/uploads/2024/07/chairs-2181919_1280.jpg" alt="Office">
+                        <div class="arch-item-info">
+                            <span>CAD_ID #102</span>
+                            <h3>Technopark HQ Office</h3>
+                            <a href="https://rweninteriors.com/wp-content/uploads/2024/07/chairs-2181919_1280.jpg" class="glightbox link-arch"><i class="fa-solid fa-expand"></i> Inspect Plate</a>
+                        </div>
+                    </div>
+
+                    <div class="arch-item">
+                        <img src="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240305-WA0049-scaled.jpg" alt="Master Suite">
+                        <div class="arch-item-info">
+                            <span>CAD_ID #103</span>
+                            <h3>Vazhuthacaud Master Suite</h3>
+                            <a href="https://rweninteriors.com/wp-content/uploads/2024/07/IMG-20240305-WA0049-scaled.jpg" class="glightbox link-arch"><i class="fa-solid fa-expand"></i> Inspect Plate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="arch-contact" id="contact">
+            <div class="container">
+                <div class="arch-contact-card">
+                    <span class="code-tag">COMMISSION // TERMINAL</span>
+                    <h2>INITIATE ARCHITECTURAL CONSULTATION</h2>
+                    
+                    <form class="arch-form" onsubmit="event.preventDefault(); alert('CAD Consultation Request Logged!');">
+                        <div class="form-row">
+                            <input type="text" placeholder="CLIENT NAME" required>
+                            <input type="email" placeholder="EMAIL ADDRESS" required>
+                        </div>
+                        <input type="text" placeholder="PROJECT LOCATION (e.g. Kowdiar, TVM)">
+                        <textarea placeholder="PROJECT DIMENSIONS & REQUIREMENTS" rows="3"></textarea>
+                        <button type="submit" class="btn-arch-solid">SUBMIT TERMINAL DATA</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
