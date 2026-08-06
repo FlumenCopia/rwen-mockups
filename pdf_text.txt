@@ -1,0 +1,81 @@
+--- PAGE 1 ---
+ 
+ 
+ 
+Gautham villa T.c7/82 Kanjirampara PO, 
+Kanjirampara, Thiruvananthapuram, Kerala 695030  
+ 
+ 
+Website Development Proposal  
+Rwen Construction & Interiors Private Limited 
+1. Executive Summary 
+This proposal outlines the development of a modern, responsive, and SEO-friendly 
+corporate website for Rwen Construction & Interiors Private Limited. The solution includes 
+a premium user interface, dynamic content management system, secure Python Django 
+backend, and a feature-rich Admin Dashboard. The website is designed to enhance the 
+company's online presence, effectively showcase its services and completed projects, and 
+simplify day-to-day content management through an intuitive administrative interface. 
+2. Project Objectives 
+○ Premium responsive website 
+○ Improve online presence 
+○ SEO optimization 
+○ Fast loading performance 
+○ Secure CMS/Admin Dashboard 
+○ Mobile friendly design 
+○ Easy content management 
+ 
+ 
+3. Scope of Work  
+Website Pages 
+Home, About Us, Services, Projects, Gallery, Blog, Testimonials, Contact, FAQ, Privacy Policy 
+and Terms & Conditions. 
+--- PAGE 2 ---
+ 
+ 
+Admin Dashboard 
+Secure admin login with modules for banner management, gallery management, blog 
+management, testimonial management, contact enquiry management website settings and 
+user management. 
+4.Technology Stack Used 
+ Frontend Technologies 
+○ Next.js 
+○ HTML5, CSS3, JavaScript 
+ Backend Technologies 
+○ Python 
+○ Django 
+ 
+5. Project Timeline 
+Phase Duration 
+Requirement Analysis & Planning 2 Days 
+UI/UX Design 5 Days 
+Frontend Development 8 Days 
+Django Backend & Admin Dashboard 8 Days 8 Days 
+Testing, Deployment  8 Days 
+Total Estimated Duration 28 Working Days 28 Days 
+ 
+ 
+ 
+ 
+ 
+--- PAGE 3 ---
+ 
+ 
+6. Project Budget Estimation 
+Description  Estimated Cost 
+UI/UX Design ₹ 8,000 
+Frontend Development ₹ 12,000 
+Python Django Backend ₹ 10,000 
+Admin Dashboard ₹ 8,000 
+Testing & Deployment Support  ₹ 4,000 
+Total  ₹42,000 INR  
+ 
+7. Conclusion 
+The proposed website will provide Rwen Construction & Interiors Private  Limited with a 
+professional digital platform that reflects the quality of its interior design services. Built using 
+Next.js for the frontend and Python Django for the backend, the solution will be secure, 
+scalable, responsive, and easy to maintain. With a comprehensive Admin Dashboard, the 
+client will have complete control over banners, services, projects, galleries, blogs, 
+testimonials, and customer enquiries w ithout requiring ongoing developer support. This 
+project establishes a strong digital foundation that supports future business growth and 
+online marketing initiatives. 
+ 

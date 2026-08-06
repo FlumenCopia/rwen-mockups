@@ -1521,6 +1521,26 @@
       <div class="quote-mark">“</div>
       <blockquote class="reveal">RWEN understood how we wanted our home to feel—not just how it should look. The execution across Kerala is beyond what we imagined.</blockquote>
       <cite>Arun & Meera · Trivandrum, Kerala</cite>
+    <!-- FAQ SECTION (PROPOSAL SCOPE) -->
+    <section class="c2-section c2-faq" id="c2-faq">
+      <div class="c2-title-row reveal">
+        <div class="c2-label">08 — Common Questions</div>
+        <h2 class="c2-display">Frequently Asked Questions.</h2>
+      </div>
+      <div class="faq-list reveal" style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
+        <details style="background: rgba(255,255,255,0.03); border: 1px solid var(--gold-border); padding: 20px 24px; border-radius: 12px; cursor: pointer;">
+          <summary style="font-family: var(--font-display, 'Poppins'); font-size: 1.1rem; font-weight: 600; color: var(--gold); outline: none;">What services does RWEN Construction & Interiors Private Limited provide?</summary>
+          <p style="margin-top: 12px; color: #8E8E98; font-size: 0.95rem; line-height: 1.6;">We provide full-spectrum architectural design, luxury residential interior decoration, executive office space planning, 3D CAD modeling & rendering, structural MEP engineering (mechanical, electrical, plumbing), and complete turn-key renovation execution across Kerala.</p>
+        </details>
+        <details style="background: rgba(255,255,255,0.03); border: 1px solid var(--gold-border); padding: 20px 24px; border-radius: 12px; cursor: pointer;">
+          <summary style="font-family: var(--font-display, 'Poppins'); font-size: 1.1rem; font-weight: 600; color: var(--gold); outline: none;">How do 3D renders help in project execution?</summary>
+          <p style="margin-top: 12px; color: #8E8E98; font-size: 0.95rem; line-height: 1.6;">Our photorealistic 3D CAD renders allow clients to visualize exact material choices, lighting setups, spatial flow, and furniture placement before physical work begins, ensuring zero surprises and 100% execution accuracy.</p>
+        </details>
+        <details style="background: rgba(255,255,255,0.03); border: 1px solid var(--gold-border); padding: 20px 24px; border-radius: 12px; cursor: pointer;">
+          <summary style="font-family: var(--font-display, 'Poppins'); font-size: 1.1rem; font-weight: 600; color: var(--gold); outline: none;">Where is your office located and what are your working hours?</summary>
+          <p style="margin-top: 12px; color: #8E8E98; font-size: 0.95rem; line-height: 1.6;">Our main office is located at TC no 7, 808(3). Forest Road, Maruthankuzhi Bridge, Maruthumkuzhi, Thiruvananthapuram, Kerala 695038. We are open Monday through Saturday from 9:00 AM to 6:00 PM.</p>
+        </details>
+      </div>
     </section>
 
     <!-- CONTACT SECTION WITH EMBEDDED MAP -->
@@ -1547,6 +1567,41 @@
           <h4>Working Hours</h4>
           <p>Mon - Sat / 9:00 AM - 6:00 PM</p>
         </div>
+      </div>
+
+      <!-- Contact Inquiry Form -->
+      <div class="c2-contact-form-wrap reveal" style="margin-top: 40px; background: rgba(255,255,255,0.03); border: 1px solid var(--gold-border); padding: 35px; border-radius: 16px;">
+        <h3 style="font-family: var(--font-display, 'Poppins'); font-size: 1.5rem; color: var(--gold); margin-bottom: 20px;">Send Us a Message</h3>
+        <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to RWEN Interiors.');" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div>
+            <label style="display: block; font-size: 0.85rem; color: #8E8E98; margin-bottom: 6px;">Your Name</label>
+            <input type="text" required placeholder="John Doe" style="width: 100%; padding: 12px 16px; background: #0e100f; border: 1px solid rgba(255,255,255,0.15); color: #fff; border-radius: 8px; outline: none;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.85rem; color: #8E8E98; margin-bottom: 6px;">Email Address</label>
+            <input type="email" required placeholder="john@example.com" style="width: 100%; padding: 12px 16px; background: #0e100f; border: 1px solid rgba(255,255,255,0.15); color: #fff; border-radius: 8px; outline: none;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.85rem; color: #8E8E98; margin-bottom: 6px;">Service Required</label>
+            <select style="width: 100%; padding: 12px 16px; background: #0e100f; border: 1px solid rgba(255,255,255,0.15); color: #fff; border-radius: 8px; outline: none;">
+              <option>Residential Interior Design</option>
+              <option>Commercial Office Interiors</option>
+              <option>3D CAD Renders & Modeling</option>
+              <option>Structural MEP & Renovation</option>
+            </select>
+          </div>
+          <div>
+            <label style="display: block; font-size: 0.85rem; color: #8E8E98; margin-bottom: 6px;">Location</label>
+            <input type="text" placeholder="e.g. Kowdiar, Trivandrum" style="width: 100%; padding: 12px 16px; background: #0e100f; border: 1px solid rgba(255,255,255,0.15); color: #fff; border-radius: 8px; outline: none;">
+          </div>
+          <div style="grid-column: span 2;">
+            <label style="display: block; font-size: 0.85rem; color: #8E8E98; margin-bottom: 6px;">Project Outline</label>
+            <textarea rows="3" placeholder="Tell us about your home, villa, or office project..." style="width: 100%; padding: 12px 16px; background: #0e100f; border: 1px solid rgba(255,255,255,0.15); color: #fff; border-radius: 8px; outline: none;"></textarea>
+          </div>
+          <div style="grid-column: span 2;">
+            <button type="submit" style="background: var(--gold); color: #0e100f; border: none; padding: 14px 28px; font-weight: 700; border-radius: 30px; cursor: pointer; transition: all 0.3s ease;">Send Message →</button>
+          </div>
+        </form>
       </div>
 
       <div class="c2-map-wrap reveal">
